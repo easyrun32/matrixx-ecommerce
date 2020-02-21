@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
 .header {
   height: 70px;
   width: 100%;
@@ -6,9 +7,15 @@
   margin-bottom: 25px;
 
   .logo-container {
+    //font-family: "Tangerine", cursive;
+    //font-size: 5vw;
+    // width: 50%;
+    // height: 100%;
+    display: flex;
+    align-items: center;
     height: 100%;
-    width: 70px;
-    padding: 25px;
+    width: 20px;
+    //padding: 0.5vw;
   }
 
   .options {
