@@ -23,7 +23,9 @@ class ShopPage extends React.Component {
     //get
     const collectionRef = firestore.collection("collections");
     //conversion?
-    collectionRef.onSnapshot(async snapshot => {
+    //https://firestore.googleapis.com/v1/projects/products-dbz/databases/(default)/documents/cities/LA
+
+    collectionRef.get().then(snapshot => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionsMap);
       this.setState({ loading: false });

@@ -1,9 +1,10 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import Logo from "../../assets/matrixx4.png";
+import { stripekey } from "../../config/Key";
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = "pk_test_RM00DEkPVOwjdlmxorrpPGJF00bTdLkQgj";
+  const publishableKey = stripekey;
 
   const onToken = token => {
     console.log(token);
