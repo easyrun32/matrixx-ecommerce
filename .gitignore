@@ -2,15 +2,10 @@
 
 # dependencies
 /node_modules
-/src/config/
-
-
-
-
 
 /.pnp
 .pnp.js
-
+/src/config/
 # testing
 /coverage
 
