@@ -21,6 +21,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+    console.log("hello world");
     const { setCurrentUser } = this.props;
     // this is an observable pattern
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
