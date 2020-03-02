@@ -7,13 +7,28 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 `;
 // apply to a <Link /> component
+export const ImageContainer = styled.img`
+  height: 100px;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+  }
+`;
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
   height: 100%;
   width: 20px;
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    padding: 0;
+  }
 `;
 
 export const OptionContainer = styled.div`
@@ -22,6 +37,9 @@ export const OptionContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 //share styles <Link classname="option"/>
 // and <div classname='option'></div>

@@ -13,12 +13,13 @@ import {
   HeaderContainer,
   LogoContainer,
   OptionContainer,
-  OptionLink
+  OptionLink,
+  ImageContainer
 } from "./header.styles.jsx";
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer to="/">
-      <img className="logo" alt="logo" src={Logo} style={{ height: "120px" }} />
+      <ImageContainer alt="logo" src={Logo} />
     </LogoContainer>
     <OptionContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
