@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ErrorImageOverlay = styled.div`
   height: 60vh;
   width: 100%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +13,10 @@ export const ErrorImageOverlay = styled.div`
 export const ErrorImageContainer = styled.div`
   display: inline-block;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
-  background-size: cover;
-  background-position: center;
-  width: 40vh;
-  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vh;
+  height: 100%;
 `;
 
 export const ErrorImageText = styled.h2`

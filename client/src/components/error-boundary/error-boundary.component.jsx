@@ -5,6 +5,7 @@ import {
   ErrorImageContainer,
   ErrorImageText
 } from "./error-boundary.styles";
+import dog from "./dog.png";
 export default class ErrorBoundary extends Component {
   constructor() {
     super();
@@ -25,8 +26,11 @@ export default class ErrorBoundary extends Component {
     if (this.state.hasErrored) {
       return (
         <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl="https://i.imgur.com/lKJiT77.png" />
-          <ErrorImageText>The Dog Ate This Page</ErrorImageText>
+          <ErrorImageContainer imageUrl={dog} />
+          <ErrorImageText>The dog ate this page</ErrorImageText>
+          <ErrorImageText>
+            Ethier your internet is down or this page is having problems
+          </ErrorImageText>
         </ErrorImageOverlay>
       );
     }
