@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import dog from "./dog.png";
 export const ErrorImageOverlay = styled.div`
   height: 60vh;
   width: 100%;
@@ -12,7 +12,8 @@ export const ErrorImageOverlay = styled.div`
 
 export const ErrorImageContainer = styled.div`
   display: inline-block;
-  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+  /*background-image: ${({ imageUrl }) => `url(${imageUrl})`};*/
+  background-image: url(${dog});
   background-size: contain;
   background-repeat: no-repeat;
   width: 30vh;
