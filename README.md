@@ -23,9 +23,12 @@ export const firekey = {
 
 export const stripekey = "YOUR STRIPE KEY";
 ```
-
-
-
-
-
 visit [matrix](https://matrixx-live.herokuapp.com/)
+
+visit https://github.com/easyrun32/GraphQL-Ecommerce 
+tested using GraphQL
+
+
+
+
+
