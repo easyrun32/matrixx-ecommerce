@@ -12,7 +12,7 @@ This react project uses
 For Graphql visit
 visit https://github.com/easyrun32/GraphQL-Ecommerce 
          
-# To start create a Key.js in config directory located in client/src/config
+## To start create a Key.js in config directory located in client/src/config ##
 
 # copy paste your firebase key and stripe key in here
 
