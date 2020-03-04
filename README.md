@@ -2,7 +2,7 @@ A professional react website with easy to test components.
 
 This react project uses
 
-Markup : * Bullet list
+* Bullet list
          * Redux-saga
          * Selectors for memoization
          * React.memoize,
