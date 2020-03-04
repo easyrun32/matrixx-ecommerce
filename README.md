@@ -12,7 +12,7 @@ styled components
 
 
 
-# To start create a Key.js in config  
+# To start create a Key.js in config directory located in client/src/config
 
 # copy paste your firebase key and stripe key in here
 
