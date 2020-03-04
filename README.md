@@ -23,7 +23,7 @@ export const firekey = {
 
 export const stripekey = "YOUR STRIPE KEY";
 ```
-visit [matrix](https://matrixx-live.herokuapp.com/)
+Visit the site at [matrix](https://matrixx-live.herokuapp.com/) !
 
 
 
