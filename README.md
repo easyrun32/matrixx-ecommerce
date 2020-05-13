@@ -10,7 +10,7 @@ This react project uses
 * styled components
 
 For Graphql visit
-visit https://github.com/easyrun32/GraphQL-Ecommerce 
+ https://github.com/easyrun32/GraphQL-Ecommerce 
          
 ## 1. To start create a Key.js in config directory located in client/src/config ##
 
