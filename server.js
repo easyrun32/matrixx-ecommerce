@@ -15,11 +15,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(cors());
-
+app.options("*", cors());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "client/build", "index.html"));
   });
 }
@@ -28,7 +28,7 @@ app.get("/service-worker.js", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "build", "service-worker.js"));
 });
 
-app.listen(port, error => {
+app.listen(port, (error) => {
   if (error) throw error;
   console.log("Server running on port " + port);
 });
@@ -37,7 +37,7 @@ app.post("/payment", (req, res) => {
   const body = {
     source: req.body.token.id,
     amount: req.body.amount,
-    currency: "usd"
+    currency: "usd",
   };
 
   stripe.charges.create(body, (stripeErr, stripeRes) => {
